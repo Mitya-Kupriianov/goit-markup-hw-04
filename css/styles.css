@@ -86,7 +86,8 @@ ul {
 .link:hover,
 .link:focus,
 .link.current {
-    display: inline-block;
+    display: flex;
+    /* display: inline-block; */
     color: var(--accent-color);
 }
 
@@ -226,6 +227,9 @@ img {
 }
 
 .header-link {
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -233,7 +237,24 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
 }
-.link-mail::before {
+.link-icon {
+    /* display: flex; */
+    margin-right: 10px;
+    fill: currentColor;
+}
+/* .link-mail {
+    display: flex;
+
+} */
+/* .link-mail::after {
+    display: flex;
+    content: "";
+    width: 78px;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+} */
+/* .link-mail::before {
     display: inline-block;
     content: "";
     width: 16px;
@@ -244,20 +265,20 @@ img {
     background-repeat: no-repeat;
     background-image: ;
 
-}
+} */
 
-.link-tel::before {
+/* .link-tel::before {
     display: inline-block;
     content: "";
     width: 10px;
     height: 16px;
     margin-right: 11px;
-    /* background-position: center;
+    background-position: center;
     background-repeat: no-repeat;
-    background-size: contain; */
-    /* background-color: rebeccapurple; */
+    background-size: contain;
+    background-color: rebeccapurple;
     background-image: url(../images/smartphone.svg);
-}
+} */
 /* -----------------------------------HERO--------------------------------- */
 
 .hero {
@@ -322,18 +343,28 @@ img {
     --card-item: 4;
 }
 
-.peculiaritiea-item::before {
+.peculiarities-img {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+/* .peculiaritiea-item::before {
     display: block;
     content: "";
     height: 120px;
     margin-bottom: 30px;
+    border-radius: 4px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
     background-color: #F5F4FA;
     background-image: url(../images/app1.jpeg);
 
-}
+} */
 
 .title-pec {
     margin-top: 0;
@@ -387,11 +418,76 @@ img {
 .team-card-text {
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
 }
 
+.social {
+   /* padding: 16px 32px 30px; */
+   /* margin: 16px 32px; */
+   /* padding-bottom: 30px; */
+   /* padding: 0; */
+   margin-bottom: 30px;
+   text-align: center;
+}
+.social-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 0;
+}
+
+/* .social-item {
+    padding: 0;
+    
+} */
+.social-link {
+    padding: 0;
+    border: none;
+    width: 44px;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    fill: #AFB1B8;
+}
+.social-link:hover,
+.social-link:focus {
+    fill: #FFFFFF;
+    background-color: #188CE8;
+}
+
+/* -----------------------------------CLIENT--------------------------------- */
+.client {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+.client-item {
+    --card-item: 6;
+}
+
+.client-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+    fill: #AFB1B8;
+}
+.client-link:hover,
+.client-link:focus {
+    border-color: #2196F3;
+    fill: #2196F3;
+}
 /* -----------------------------------FOOTER--------------------------------- */
 
+.container-footer {
+    display: flex;
+    align-items: baseline;
+
+}
 .page-footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -433,6 +529,17 @@ img {
 }
 .address-item:last-child {
     margin-bottom: 0;
+}
+.title-footer {
+    color: var(--background-heder);
+}
+.social-tooter {
+    margin-bottom: 0;
+    margin-left: 70px;
+}
+.social-footer-link {
+    fill: var(--background-heder);
+    background: rgba(255, 255, 255, 0.1);
 }
 /* .address-lin {
     margin-bottom: 9px;
