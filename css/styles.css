@@ -53,8 +53,6 @@ button {
     border: 0;
     height: 40px;
     padding: 6px 22px;
-
-
 }
 
 .secondary-hover:hover,
@@ -87,7 +85,6 @@ ul {
 .link:focus,
 .link.current {
     display: flex;
-    /* display: inline-block; */
     color: var(--accent-color);
 }
 
@@ -95,7 +92,6 @@ ul {
     color: var(--primary-text-color);
     text-decoration: none;
 }
-
 
 img {
     display: block;
@@ -112,7 +108,9 @@ img {
     flex-basis: calc(
         (100% - ((var(--card-item) - 1) * var(--card-gap))) / var(--card-item));
 }
+
 /* -----------------------------------CONTAINER--------------------------------- */
+
 .container {
     margin-left: auto;
     margin-right: auto;
@@ -143,7 +141,6 @@ img {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    /* text-align: center; */
 }
 
 .title-text {
@@ -155,8 +152,6 @@ img {
 
     margin-top: 0;
     margin-bottom: 4px;
-
-
 }
 
 /* -----------------------------------HEADER--------------------------------- */
@@ -164,7 +159,6 @@ img {
 .page-header {
     background-color: var(--background-heder);
     border-bottom: 1px solid #ECECEC;
-
 }
 
 .container-header {
@@ -185,7 +179,6 @@ img {
 
 .logo {
     display: inline-block;
-    /* margin-left: 215px; */
     margin-right: 94px;
 
     color: var(--title-text-color);
@@ -196,7 +189,6 @@ img {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.2;
-
 }
 
 .page-nav {
@@ -229,7 +221,6 @@ img {
 .header-link {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -238,60 +229,15 @@ img {
     padding-bottom: 32px;
 }
 .link-icon {
-    /* display: flex; */
     margin-right: 10px;
     fill: currentColor;
 }
-/* .link-mail {
-    display: flex;
 
-} */
-/* .link-mail::after {
-    display: flex;
-    content: "";
-    width: 78px;
-    height: 4px;
-    background-color: var(--accent-color);
-    border-radius: 2px;
-} */
-/* .link-mail::before {
-    display: inline-block;
-    content: "";
-    width: 16px;
-    height: 12px;
-    margin-right: 11px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-image: ;
-
-} */
-
-/* .link-tel::before {
-    display: inline-block;
-    content: "";
-    width: 10px;
-    height: 16px;
-    margin-right: 11px;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-color: rebeccapurple;
-    background-image: url(../images/smartphone.svg);
-} */
 /* -----------------------------------HERO--------------------------------- */
 
 .hero {
-    /* background-color: var(--background-footer); */
-    /* width: 1600px; */
-    /* height: 600px; */
-    /* max-width: 1600px; */
-    /* margin-top: 0;
-    margin-bottom: 0; */
     margin: 0 auto;
     text-align: center;
-    /* padding-top: 200px ;
-    padding-bottom: 200px;   */
     padding: 200px 0;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpeg);
     background-position: center;
@@ -352,19 +298,6 @@ img {
     align-items: center;
     margin-bottom: 30px;
 }
-/* .peculiaritiea-item::before {
-    display: block;
-    content: "";
-    height: 120px;
-    margin-bottom: 30px;
-    border-radius: 4px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-color: #F5F4FA;
-    background-image: url(../images/app1.jpeg);
-
-} */
 
 .title-pec {
     margin-top: 0;
@@ -394,7 +327,6 @@ img {
     padding-bottom: 94px;
 }
 
-
 /* -----------------------------------TEAM--------------------------------- */
 
 .page-team {
@@ -402,8 +334,6 @@ img {
     padding-top: 94px;
     padding-bottom: 94px;
 }
-
-
 
 .team-card {
     background: #FFFFFF;
@@ -414,7 +344,6 @@ img {
     border-radius: 0px 0px 4px 4px;
 }
 
-
 .team-card-text {
     text-align: center;
     padding-top: 30px;
@@ -422,13 +351,10 @@ img {
 }
 
 .social {
-   /* padding: 16px 32px 30px; */
-   /* margin: 16px 32px; */
-   /* padding-bottom: 30px; */
-   /* padding: 0; */
    margin-bottom: 30px;
    text-align: center;
 }
+
 .social-list {
     display: flex;
     justify-content: center;
@@ -436,10 +362,6 @@ img {
     padding: 0;
 }
 
-/* .social-item {
-    padding: 0;
-    
-} */
 .social-link {
     padding: 0;
     border: none;
@@ -488,6 +410,7 @@ img {
     align-items: baseline;
 
 }
+
 .page-footer {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -508,7 +431,6 @@ img {
     letter-spacing: 0.03em;
 }
 
-
 .address {
     font-family: 'Roboto';
     font-style: normal;
@@ -527,41 +449,35 @@ img {
 .address-item {
     margin-bottom: 9px;
 }
+
 .address-item:last-child {
     margin-bottom: 0;
 }
+
 .title-footer {
     color: var(--background-heder);
+    text-transform: uppercase;
+    padding-bottom: 20px;
 }
+
 .social-tooter {
     margin-bottom: 0;
     margin-left: 70px;
 }
+
 .social-footer-link {
     fill: var(--background-heder);
     background: rgba(255, 255, 255, 0.1);
 }
-/* .address-lin {
-    margin-bottom: 9px;
-    color: rgba(255, 255, 255, 0.6);
-} */
 
-/* .address-link:last-child {
-    margin-bottom: 0;
-} */
 .address-link {
     color: rgba(255, 255, 255, 0.6);
-    /* margin-bottom: 0; */
 }
 
 /* -----------------------------------PORTFOLIO--------------------------------- */
 /* -----------------------------------PORTFOLIO--------------------------------- */
 
 .portfolio-page {
-    /* margin-left: auto;
-    margin-right: auto;
-    width: 1200px;
-    padding: 0 15px; */
     padding-top: 94px;
     padding-bottom: 94px;
 }
@@ -592,12 +508,6 @@ img {
 
 /* -----------------------------------P2-WORK-CARDS--------------------------------- */
 
-/* .work-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-} */
-
 .work-item {
     background: var(--background-heder);
 
@@ -609,18 +519,9 @@ img {
      0px 4px 4px rgba(0, 0, 0, 0.06),
      1px 4px 6px rgba(0, 0, 0, 0.16);
 }
-/* .work-item:nth-child(3n) {
-    margin-right: 0;
-}
-.work-item:nth-last-child(-n + 3) {
-    margin-bottom: 0;
-} */
 
 .work-cards-link {
     text-decoration: none;
-
-    /* border: 1px solid #EEEEEE; */
-    /* height: 404px; */
 }
 
 .work-text {
@@ -636,7 +537,6 @@ img {
     font-size: 16px;
     line-height: 1.88;
     letter-spacing: 0.03em;
-    /* margin-bottom: 20px; */
 }
 
 /* ------------------------------------------------------------------------------------ */
