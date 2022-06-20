@@ -60,10 +60,11 @@ button {
     color: var(--background-heder);
     background-color: var(--accent-color);
 
-    border-radius: 4px;
-    border: 0;
-    height: 40px;
-    padding: 6px 22px;
+    box-shadow:
+        0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06),
+        1px 4px 6px rgba(0, 0, 0, 0.16);
+
 }
 
 h1,
@@ -290,12 +291,13 @@ img {
 }
 
 .peculiarities-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
     border-radius: 4px;
-    display: flex;
-    align-items: center;
     margin-bottom: 30px;
 }
 
@@ -347,13 +349,16 @@ img {
 .team-card-text {
     text-align: center;
     padding-top: 30px;
-    padding-bottom: 15px;
+    padding-bottom: 30px;
 }
 
-.social {
+.team-card-text p {
+    margin-bottom: 16px;
+}
+/* .social {
    margin-bottom: 30px;
    text-align: center;
-}
+} */
 
 .social-list {
     display: flex;
@@ -457,7 +462,7 @@ img {
 .title-footer {
     color: var(--background-heder);
     text-transform: uppercase;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
 }
 
 .social-tooter {
@@ -497,14 +502,6 @@ img {
 .button-item:last-child {
     margin-right: 0;
 }
-.button-item:hover,
-.button-item:focus {
-    box-shadow:
-     0px 1px 1px rgba(0, 0, 0, 0.12),
-     0px 4px 4px rgba(0, 0, 0, 0.06),
-     1px 4px 6px rgba(0, 0, 0, 0.16);
-    border-radius: 4px;
-}
 
 /* -----------------------------------P2-WORK-CARDS--------------------------------- */
 
@@ -512,16 +509,23 @@ img {
     background: var(--background-heder);
 
 }
-.work-item:hover,
+/* .work-item:hover,
 .work-item:focus {
     box-shadow:
      0px 1px 1px rgba(0, 0, 0, 0.12),
      0px 4px 4px rgba(0, 0, 0, 0.06),
      1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+} */
 
 .work-cards-link {
     text-decoration: none;
+}
+.work-cards-link:hover,
+.work-cards-link:focus {
+    box-shadow:
+    0px 1px 1px rgba(0, 0, 0, 0.12),
+    0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .work-text {
